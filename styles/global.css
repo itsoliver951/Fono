@@ -23,24 +23,24 @@ html {
 :root {
     /* ===== CORES PRINCIPAIS ===== */
 
-    --cor-primaria: #E8735A;
+    --cor-primaria: #9d6bb1; 
     /* Azul petróleo */
     --cor-secundaria: #A3BFDB;
     /* Azul claro */
-    --cor-destaque: #F5A08E;
+    --cor-destaque: #C5A4D2; 
     /* Rosa */
     --cor-apoio: #D6E8F4;
     /* Lilás */
-    --cor-acento: #E8735A;
+    --cor-acento: #C5A4D2; 
     /* Coral */
 
     /* Versões escurecidas das cores de apoio, para uso em texto/ícone
        sobre fundo claro — as tonalidades pastel acima não têm contraste
        suficiente quando usadas como cor de texto (WCAG AA). */
     --cor-secundaria-forte: #7BA7C8;
-    --cor-destaque-forte: #D4593F;
+    --cor-destaque-forte: #783f8f; 
     --cor-apoio-forte: #7BA7C8;
-    --cor-acento-forte: #D4593F;
+    --cor-acento-forte: #8f5ca3; 
 
 
     /* ===== FUNDOS ===== */
@@ -59,14 +59,14 @@ html {
     /* Títulos e textos importantes */
     --texto-secundario: #4A5568;
     /* Parágrafos e textos menores */
-    --texto-claro: #FFFFFF;
+    --texto-claro: #fcfbfb;
     /* Texto sobre fundos escuros */
 
 
     /* ===== INTERAÇÃO ===== */
 
-    --botao-principal: #E8735A;
-    --botao-hover: #D4593F;
+    --botao-principal: #ff81a2;
+    --botao-hover: #f44d7a;
 
     --borda: #D6E8F4;
 
