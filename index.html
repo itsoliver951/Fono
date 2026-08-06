@@ -75,8 +75,9 @@
                         <h3>Thalita Conceição Santos</h3>
                         <p>Atuo com escuta atenta às crianças e apoio acolhedor às famílias. Cada plano terapêutico considera a história, as necessidades e o ritmo individual de desenvolvimento.</p>
                         <div class="tip-box"><span>Meu propósito</span><p>Promover o desenvolvimento da comunicação e da qualidade de vida por meio de avaliações, orientações e terapias individualizadas.</p></div>
-                        <div class="progress-label"><span>Formação &amp; especializações</span><b>TEA · Linguagem · ABA · CAA</b></div>
+                        <div class="progress-label"><span>Formação &amp; especializações</span></div>
                         <div class="profile-progress"><i></i></div>
+                        <button class="training-button" type="button" data-open-training>Ver histórico de formações <span aria-hidden="true">→</span></button>
                     </div>
                 </article>
             </div>
@@ -107,10 +108,21 @@
         <section id="depoimentos" class="reference-section">
             <div class="container">
                 <header class="section-heading"><span>Resultados que ganham voz</span><h2>O que as <em>famílias dizem</em></h2></header>
-                <div class="story-grid">
-                    <blockquote><span>“</span><p>Desde que começamos as sessões, nossa filha está se expressando muito melhor. Cada orientação foi certeira.</p><cite>C. D.</cite></blockquote>
-                    <blockquote><span>“</span><p>O carinho e o profissionalismo da Thalita fazem toda a diferença. Nosso filho adora as sessões.</p><cite>M. B.</cite></blockquote>
-                    <blockquote><span>“</span><p>Em poucos meses vimos uma evolução enorme na fala e na confiança. Somos muito gratos.</p><cite>G. F.</cite></blockquote>
+                <div class="story-carousel" aria-roledescription="carrossel" aria-label="Depoimentos de famílias">
+                    <div class="story-grid" aria-live="polite">
+                        <blockquote class="story-slide is-active"><span>“</span><p>Desde que começamos as sessões, nossa filha está se expressando muito melhor. Cada orientação foi certeira.</p><cite>C. D.</cite></blockquote>
+                        <blockquote class="story-slide" hidden><span>“</span><p>O carinho e o profissionalismo da Thalita fazem toda a diferença. Nosso filho adora as sessões.</p><cite>M. B.</cite></blockquote>
+                        <blockquote class="story-slide" hidden><span>“</span><p>Em poucos meses vimos uma evolução enorme na fala e na confiança. Somos muito gratos.</p><cite>G. F.</cite></blockquote>
+                    </div>
+                    <div class="story-controls">
+                        <button class="story-arrow story-prev" type="button" aria-label="Depoimento anterior">&#8592;</button>
+                        <div class="story-dots" aria-label="Escolher depoimento">
+                            <button class="story-dot is-active" type="button" aria-label="Mostrar depoimento 1" aria-current="true"></button>
+                            <button class="story-dot" type="button" aria-label="Mostrar depoimento 2"></button>
+                            <button class="story-dot" type="button" aria-label="Mostrar depoimento 3"></button>
+                        </div>
+                        <button class="story-arrow story-next" type="button" aria-label="Próximo depoimento">&#8594;</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -161,6 +173,60 @@
 
     <footer class="site-footer"><div class="container footer__inner"><a href="#inicio" class="logo"><span class="logo__mark">TC</span><span class="logo__text"><span class="logo__name">Thalita Conceição</span><span class="logo__role">Fonoaudióloga Infantil</span></span></a><p>© <span id="ano-atual"></span> Thalita Conceição</p><div class="footer-links"><a href="#sobre">Sobre</a><a href="#servicos">Serviços</a><a href="#agendamento">Contato</a></div></div></footer>
     <a class="mobile-cta" href="https://wa.me/5518996502773?text=Ol%C3%A1%2C%20Thalita!%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+
+    <dialog class="training-modal" id="training-modal" aria-labelledby="training-modal-title">
+        <div class="training-modal__header">
+            <div>
+                <span>Trajetória profissional</span>
+                <h2 id="training-modal-title">Formação e especializações</h2>
+            </div>
+            <button class="training-modal__close" type="button" data-close-training aria-label="Fechar histórico de formações">×</button>
+        </div>
+        <p class="training-modal__intro">Uma trajetória de aprendizado contínuo voltada ao desenvolvimento da comunicação infantil.</p>
+        <div class="training-timeline" tabindex="0" aria-label="Linha do tempo das formações">
+            <article class="training-item">
+                <span class="training-item__marker">2021</span>
+                <div><small>Graduação</small><h3>Fonoaudiologia</h3><p>Universidade do Oeste Paulista — UNOESTE</p></div>
+            </article>
+            <article class="training-item">
+                <span class="training-item__marker">Pós</span>
+                <div><small>Especialização</small><h3>Transtorno do Espectro Autista — TEA</h3></div>
+            </article>
+            <article class="training-item">
+                <span class="training-item__marker">Pós</span>
+                <div><small>Especialização</small><h3>Linguagem Infantil</h3><p>Avaliação e intervenção</p></div>
+            </article>
+            <article class="training-item">
+                <span class="training-item__marker">Atual</span>
+                <div><small>Especialização em andamento</small><h3>Intervenção ABA</h3><p>Autismo e deficiência intelectual</p></div>
+            </article>
+            <article class="training-item">
+                <span class="training-item__marker">Curso</span>
+                <div><small>Aperfeiçoamento clínico</small><h3>PCM</h3></div>
+            </article>
+            <article class="training-item">
+                <span class="training-item__marker">Curso</span>
+                <div><small>Aperfeiçoamento clínico</small><h3>Introdutório PROMPT</h3><p>Prompts for Restructuring Oral Muscular Phonetic Targets</p></div>
+            </article>
+            <article class="training-item">
+                <span class="training-item__marker">Curso</span>
+                <div><small>Comunicação alternativa</small><h3>Core Power</h3><p>Formação em Comunicação Aumentativa e Alternativa — CAA</p></div>
+            </article>
+            <article class="training-item">
+                <span class="training-item__marker">Curso</span>
+                <div><small>Aperfeiçoamento clínico</small><h3>ReST</h3><p>Rapid Syllable Transition Treatment</p></div>
+            </article>
+            <article class="training-item">
+                <span class="training-item__marker">Curso</span>
+                <div><small>Aperfeiçoamento clínico</small><h3>DTTC</h3><p>Dynamic Temporal and Tactile Cueing</p></div>
+            </article>
+            <article class="training-item">
+                <span class="training-item__marker">Curso</span>
+                <div><small>Aperfeiçoamento clínico</small><h3>Therapy Taping</h3><p>Bandagem elástica terapêutica aplicada à fonoaudiologia</p></div>
+            </article>
+        </div>
+    </dialog>
+
     <script src="scripts/main.js"></script>
 </body>
 </html>
