@@ -1,0 +1,114 @@
+*,
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+}
+
+:root {
+    /* ===== CORES PRINCIPAIS ===== */
+
+    --cor-primaria: #E8735A;
+    /* Azul petróleo */
+    --cor-secundaria: #A3BFDB;
+    /* Azul claro */
+    --cor-destaque: #F5A08E;
+    /* Rosa */
+    --cor-apoio: #D6E8F4;
+    /* Lilás */
+    --cor-acento: #E8735A;
+    /* Coral */
+
+    /* Versões escurecidas das cores de apoio, para uso em texto/ícone
+       sobre fundo claro — as tonalidades pastel acima não têm contraste
+       suficiente quando usadas como cor de texto (WCAG AA). */
+    --cor-secundaria-forte: #7BA7C8;
+    --cor-destaque-forte: #D4593F;
+    --cor-apoio-forte: #7BA7C8;
+    --cor-acento-forte: #D4593F;
+
+
+    /* ===== FUNDOS ===== */
+
+    --fundo-principal: #F7F9FC;
+    /* Fundo geral do site */
+    --fundo-secundario: #EDF1F7;
+    /* Cards e seções */
+    --fundo-destaque: #D6E8F4;
+    /* Áreas destacadas em azul bem suave */
+
+
+    /* ===== TEXTOS ===== */
+
+    --texto-principal: #1A202C;
+    /* Títulos e textos importantes */
+    --texto-secundario: #4A5568;
+    /* Parágrafos e textos menores */
+    --texto-claro: #FFFFFF;
+    /* Texto sobre fundos escuros */
+
+
+    /* ===== INTERAÇÃO ===== */
+
+    --botao-principal: #E8735A;
+    --botao-hover: #D4593F;
+
+    --borda: #D6E8F4;
+
+
+    /* ===== FONTES ===== */
+    --fonte-titulo: "Nunito", sans-serif;
+    --fonte-texto: "DM Sans", sans-serif;
+
+    --font-size-base: 1rem;
+    --font-size-lg: 1.25rem;
+    --font-size-xl: 1.5rem;
+    --font-size-xxl: 2.5rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+    color: var(--texto-principal);
+}
+
+body {
+    font-family: var(--fonte-texto);
+    font-weight: 400;
+    color: var(--texto-secundario);
+}
+
+button {
+    font-family: var(--fonte-texto);
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (width >=80em) {
+    root {
+        --font-size-lg: 2rem;
+        --font-size-xl: 3rem;
+        --font-size-xxl: 4rem;
+    }
+}
